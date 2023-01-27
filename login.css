@@ -1,0 +1,120 @@
+@import "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(pic.jpg);
+    background-size: cover;
+}
+.login{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-bottom: 1px solid yellow;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility:hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top:-50%;
+    border-radius:50%;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2,);
+}
+.popup h2{
+    font-size:38px;
+    font-weight:500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding:10px 0;
+    background: #6fd649;
+    color:#fff;
+    border:0;
+    outline:none;
+    font-size:18px;
+    border-radius: 4px;
+    cursor:pointer;
+    box-shadow:0 5px 5px rgba(0,0,0,0.2,);
+
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login input[type="text"] input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size:16px ;
+}
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: clay;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+}
+.login a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkcyan;
+}
+.login a:hover{
+    color:#ffc107;
+}

@@ -1,0 +1,39 @@
+<html>
+    <title>Login phase</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <head></head>
+    <body>
+        <div class="login">
+            <img src="pic"  class="avatar">
+            <h1>Login Here!!!</h1>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <p>Username</p>
+
+            <input type="text" name="" placeholder="Enter user name">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <input type="submit" name="" value="Login" onclick="openPopup()"><br>
+
+            <a href="#">Forget password?</a><br>
+            <a href="#"> Create account?</a>
+            <div class="popup" id="popup">
+                <img src="tick.png">
+                <h2>Thank you!</h2>
+                <p>Your details have been submitted successfully. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
+
+        </div>
+        <script>
+            let popup= document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+    </body>
+</html>
